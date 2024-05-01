@@ -1,0 +1,30 @@
+# Arquivos temporários gerados durante a compilação
+bin/
+obj/
+
+# Arquivos de configuração
+*.user
+*.suo
+*.cache
+*.log
+
+# Dependências e pacotes
+packages/
+
+# Arquivos gerados automaticamente
+.vs/
+*.vscode/
+
+# Arquivos de compilação
+*.dll
+*.exe
+
+# Arquivos de publicação
+publish/
+
+# Arquivos de configuração específicos do ambiente
+appsettings.Development.json
+appsettings.Production.json
+
+# Arquivos de saída de logs
+*.log
