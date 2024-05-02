@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using api_account.module.Models;
 
 namespace api_account.module.Interfaces
@@ -10,5 +6,6 @@ namespace api_account.module.Interfaces
     {
         public Task RegisterAsync(Account account);
         public Task LoginAsync(string email,  string password);
+        public Task<Account> GetByEmailAsync(string email);
     }
 }

@@ -5,6 +5,7 @@ namespace api_account.module.Interfaces
     public interface IAccountRepository
     {
         public Task RegisterAsync(Account account);
-        public Task Login(string email, string password);
+        public Task LoginAsync(string email, string password);
+        public Task<Account> GetByEmailAsync(string email);
     }
 }
