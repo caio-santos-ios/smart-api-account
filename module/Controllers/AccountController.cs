@@ -31,7 +31,7 @@ namespace api_account.module.Controllers
             var command = new RegisterAccountCommand(account);
             var result = await _mediator.Send(command);
           
-            return CreatedAtAction(nameof(RegisterAsync), new { id = result.Id }, result);
+            return CreatedAtAction(nameof(RegisterAsync), new { result });
         }
 
         [HttpPost("login")]

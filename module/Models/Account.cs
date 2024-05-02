@@ -15,5 +15,13 @@ namespace api_account.module.Models
         public required string Email { get; set; }
         [BsonElement("password")]
         public required string Password { get; set; }
+        [BsonElement("active")]
+        public bool Active { get; set; } = true;
+        [BsonElement("created_at")]
+        public DateTime? CreatedAt { get;} = new DateTime();
+        [BsonElement("updated_at")]
+        public DateTime? UpdatedAt { get;} = new DateTime();
+        [BsonElement("deleted_at")]
+        public DateTime? DeletedAt { get;} = new DateTime();
     }
 }
